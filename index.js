@@ -11,14 +11,16 @@ var carro = {
   restante: function (rodou) {
     return (this.quantidadeTanque -= rodou / this.consumoMedio);
   },
-  "setCor": function(branco){
-   this.cor = branco;
+  "setCor": function(novaCor){
+   this.cor = novaCor
   },
-  "setCapTanque": function(){
-   this.capacidadeTanque
+  "setCapTanque": function(novaCapacidade){
+   this.capacidadeTanque = novaCapacidade
   },
-  "setConsMedio": function(){
-   this.consumoMedio
-  }
-
+  "setConsMedio": function(novoConsumo){
+   this.consumoMedio = novoConsumo
+  },
+  "getConsumoMedio": function(){
+    console.log(carro.consumoMedio + ' km/l')
+  },
 };
